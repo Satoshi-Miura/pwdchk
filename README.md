@@ -1,9 +1,18 @@
 # pwdchk
 このツールはパスワード強度をチェックします(This tool check password strength)
 
+セットアップ setup  
+  
+このpwdchkディレクトリをApacheのhtdocディレクトリにコピーします。  
+Copy this pwdchk directory to Apache's htdoc directory.  
+するとWebブラウザで表示できます。  
+Then you can display it with a web browser.  
+
+動作 behaivor  
+  
 入力されたパスワードから次の事項を考慮してパスワード強度を計算します。  
 Calculates the password strength from the entered password considering the following:  
-
+  
 - 長さが10文字以上か？   Is it more than 10 characters long?  
 - 数字を含むか？         Does it contains a number?  
 - 英小文字を含むか？     Does it contain lowercase letters?  
@@ -20,7 +29,7 @@ Calculates the password strength from the entered password considering the follo
 - とても弱い(不合格)      very-weak(fail)     (0~20%)  
 - 未入力               empty          (N/A)  
 
-独自のNGワードを追加するなら js/jquery.pwdMeasure.js の 236行目に追加する。
+独自のNGワードを追加するなら js/jquery.pwdMeasure.js の 236行目にNGワードを追加して下さい。  
 To add your own NG word, add it on line 236 of js/jquery.pwdMeasure.js.
 
 このコードは、[wadackel/jquery-pwd-measure](https://github.com/wadackel/jquery-pwd-measure) を流用しました。ありがとうtsuyoshi wada。  
