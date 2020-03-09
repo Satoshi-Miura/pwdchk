@@ -1,0 +1,158 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700);/*!
+ *  Font Awesome 4.4.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+@font-face {font-family:'FontAwesome';src:url("../fonts/fontawesome-webfont.eot?v=4.4.0");src:url("../fonts/fontawesome-webfont.eot?#iefix&v=4.4.0") format("embedded-opentype"),url("../fonts/fontawesome-webfont.woff2?v=4.4.0") format("woff2"),url("../fonts/fontawesome-webfont.woff?v=4.4.0") format("woff"),url("../fonts/fontawesome-webfont.ttf?v=4.4.0") format("truetype"),url("../fonts/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular") format("svg");font-weight:normal;font-style:normal}
+.fa {display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.fa-hand-o-right:before {content:""}
+.fa-paragraph:before{content:""}
+body { margin:0 }
+input, select {
+  color:inherit;
+  font:inherit;
+  margin:0
+}
+a {background-color:transparent; }
+a:active,a:hover {outline:0}
+small {font-size:80%}
+a{color:#29B6F6;text-decoration:none;transition:all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1)}
+a:hover {color:#077cb2}
+body,html {
+    width:100%;
+    height:100%;
+    min-width:320px;
+    background:#fff;
+    color:#212121;
+    font-size:18px;
+    font-family:"ヒラギノ角ゴ Pro W3","ヒラギノ角ゴ Pro","Hiragino Kaku Gothic Pro","Hiragino Kaku Gothic ProN",Arial,Helvetica,"メイリオ",Meiryo,cursive;
+    line-height:1.6
+}
+h1,h2,h3,h4,h5,h6{
+    font-family:"Roboto Slab",serif;
+    font-weight:bold;
+    color:#212121
+}
+h1 { font-size:2.6rem }
+h2 { font-size:2rem   }
+::-moz-selection{background:#455a64}
+::selection{background:#455a64}
+::-moz-selection{background:#455a64}
+::-webkit-scrollbar {width:14px;background:#99aeb8}
+::-webkit-scrollbar:horizontal{height:5px}
+::-webkit-scrollbar-track{border-radius:2px}
+::-webkit-scrollbar-thumb { border-radius:2px;background:#6b8a99 }
+@media only screen and (max-width: 780px){
+  body,html { font-size:13px }
+  .container{
+    width:auto;
+    padding-right:15px;
+    padding-left:15px;
+    margin-right:10px;
+    margin-left:10px
+  }
+  .hero .container {
+    padding-right:0;
+    padding-left:0
+  }
+  .contents {
+    padding-top:15px;
+    padding-bottom:15px
+  }
+}
+.container,.form-group { zoom:1 }
+.container:after,.form-group:after {
+  content:"";
+  clear:both;
+  display:block
+}
+.container {
+  position:relative;
+  width:720px;
+  margin-right:auto;
+  margin-left:auto;
+  padding-right:30px;
+  padding-left:30px
+}
+.hero {
+  padding:60px 0 120px 0;
+  background:#607d8b;
+  color:#fff;
+  word-wrap:break-word
+}
+.hero h1 {
+  margin-top:0;
+  color:#fff
+}
+.contents {
+  margin-top:-60px;
+  margin-bottom:90px;
+  padding-top:30px;
+  padding-bottom:30px;
+  background:#fff;
+  box-shadow:0 3px 3px rgba(0,0,0,0.2)
+}
+.section {
+  position:relative;
+  margin-bottom:5em;
+  color:#727272
+}
+.section__title{
+  margin-top:0
+}
+.section__title .fa {
+  color:#727272
+}
+.form-group {
+  margin:1em 0
+}
+.form-group__label {
+  display:block;
+  margin:0 0 .5em 0;
+  font-size:.7rem;
+  cursor:pointer
+}
+.form-group__input {
+  width:100%;
+  border-radius:2px;
+  background:#fff;
+  border:1px solid #b6b6b6;
+  padding:.5em 1em;
+  box-sizing:border-box;
+  transition:all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1)
+}
+.form-group__input:focus {
+  outline:none;
+  border-color:#29B6F6
+}
+.pm-indicator{
+  margin:10px 0;
+  padding:1em 1em;
+  background:#e4e4e4;
+  border:1px solid #ccc;
+  border-radius:2px;color:#2c3e50;
+  font-size:14px;
+  text-shadow:1px 1px 0 rgba(255,255,255,0.8);
+  text-align:center;
+  transition:all .2s ease-in-out
+}
+
+.pm-indicator.very-weak,.pm-indicator.not-match {
+    background-color:#ffc3cf;
+    border-color:#be1d30
+}
+.pm-indicator.weak {
+    background-color:#ffe6e5;
+    border-color:#ff787d
+}
+.pm-indicator.average{
+    background-color:thistle;
+    border-color:orange;
+}
+.pm-indicator.strong {
+    background-color:#bceea6;
+    border-color:#78bc42
+}
+.pm-indicator.very-strong {
+    background-color:#68c6d7;
+    border-color:#4f85a7
+}
