@@ -1,6 +1,9 @@
 # pwdchk
 このツールはパスワード強度をチェックします(This tool check password strength)
 
+DEMO
+- codepen : https://codepen.io/smiura/pen/amdANY
+
 セットアップ setup  
   
 このpwdchkディレクトリをApacheのhtdocディレクトリにコピーします。  
@@ -32,5 +35,5 @@ Calculates the password strength from the entered password considering the follo
 独自のNGワードを追加するなら js/jquery.pwdMeasure.js の 236行目にNGワードを追加して下さい。  
 To add your own NG word, add it on line 236 of js/jquery.pwdMeasure.js.
 
-このコードは、[wadackel/jquery-pwd-measure](https://github.com/wadackel/jquery-pwd-measure) を流用しました。ありがとうtsuyoshi wada。  
+このコードは、[wadackel/jquery-pwd-measure](https://github.com/wadackel/jquery-pwd-measure) を流用しました。tsuyoshi wadaさんありがとう。  
 This code used [wadackel/jquery-pwd-measure](https://github.com/wadackel/jquery-pwd-measure).Thanks tsuyoshi wada.
