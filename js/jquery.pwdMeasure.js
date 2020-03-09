@@ -23,7 +23,7 @@ String.prototype.strReverse = function() {
   // CommonJS
   }else if( typeof exports === "object" ){
     module.exports = factory(require("jquery"));
-    
+
   // Default (browser)
   }else{
     factory(jQuery);
@@ -65,7 +65,7 @@ String.prototype.strReverse = function() {
           {score:100,        label:"とても強い (合格)", className:"very-strong"}, //81~100%
           {score:"notMatch", label:"不一致",     className:"not-match"},   //not match
           {score:"empty",    label:"未入力",     className:"empty"}        //empty
-        ], 
+        ],
         indicator: "#pm-indicator",
         indicatorTemplate: "パスワード強度: <%= label %>",
         confirm: false,
@@ -234,7 +234,6 @@ String.prototype.strReverse = function() {
     if (found.specialChars == 0) point = Math.floor(point * 0.5);
 
     // NG words
-    if (txt.match(/^.*(helix|micro|cads|cadam|solution)/i)) point = 0;
     if (txt.match(/^.*(admin|root|password|qwerty)/i)) point = 0;
     if (txt.match(/^.*(service|backup|user|client)/i)) point = 0;
     if (txt.match(/^.*(server|group|anonym|sales)/i) ) point = 0;
